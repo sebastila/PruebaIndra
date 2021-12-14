@@ -1,0 +1,72 @@
+{
+	"info": {
+		"_postman_id": "36b5d3bb-06b4-4294-a701-56a86e284141",
+		"name": "PruebaIndra",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "PruebaCasas",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"lstCasas\": [1,1,1,0,1,1,1,1],\r\n   \"dias\": 2\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5262/api/Pruebas/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5262",
+					"path": [
+						"api",
+						"Pruebas",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PruebaCamiones",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"lstPaquetes\": [10, 60, 40, 35, 20, 50],\r\n    \"tamanioCamion\": 90\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5262/api/Pruebas/PaquetesCamion",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5262",
+					"path": [
+						"api",
+						"Pruebas",
+						"PaquetesCamion"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
